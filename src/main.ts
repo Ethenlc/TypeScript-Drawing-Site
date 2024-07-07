@@ -23,7 +23,6 @@ class DrawingApp {
         this.canvas.addEventListener('mouseup', this.stopDrawing.bind(this));
         this.canvas.addEventListener('mouseout', this.stopDrawing.bind(this));
 
-        // Add event listeners for toolbar buttons
         document.getElementById('clearButton')?.addEventListener('click', this.clearCanvas.bind(this));
         document.getElementById('colorPicker')?.addEventListener('input', this.changeColor.bind(this));
         document.getElementById('eraserButton')?.addEventListener('click', this.toggleEraser.bind(this));
